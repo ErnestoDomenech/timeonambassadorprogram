@@ -1,0 +1,570 @@
+/* ======= RESET ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ======= GENERAL ======= */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #343a40;
+    line-height: 1.6;
+    height: 100%;
+    background-color: #F3F0F0
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+.principal {
+   
+    display: flex;
+    flex-direction: column;
+}
+
+.cta-button {
+    max-width: 400px;
+    background: #00b894;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-align: center;
+}
+
+    .cta-button:hover {
+        background: #019270;
+    }
+
+/* ======= HEADER ======= */
+header {
+    background-color: #F3F0F0;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+}
+
+.logo {
+    width: 250px ;
+    
+}
+
+.nav-pills {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+
+.nav-pills .nav-link {
+    padding: 8px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #333;
+    color: white;
+}
+
+/* ======= VIDEO PRINCIPAL ======= */
+.video-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.hero-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+}
+.img-hero {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ======= SECCIÓN "¿QUIÉN SOY?" Y "PRECIO" ======= */
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 15px;
+}
+.section-subtitle {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.feature {
+    text-align: center;
+/*    padding: 15px;*/
+}
+
+.feature-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.feature-large-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 20px 0px;
+}
+
+.iconosQ {
+    width: 40px;
+    height: 40px;
+}
+
+.iconosQL {
+    width: 120px;
+    height: 120px;
+}
+
+.columnas p {
+    color: #555;
+    text-align: justify;
+}
+
+#quienSoy {
+    margin-top: 1%;
+}
+
+#calculator {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* ======= TARIFAS ======= */
+h7 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #555;
+}
+
+.card-header {
+    background-color: white;
+    color: #333;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.card-body {
+    text-align: center;
+    background-color: white;
+}
+
+.card-body ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card-body ul li {
+    margin-bottom: 5px;
+}
+
+.card-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.recommended {
+    border: 3px solid #28a745;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.recommended .card-header {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.recommended .card-body {
+    background-color: white;
+}
+
+.recommended-badge {
+    position: absolute;
+    top: 70px;
+    left: -25px;
+    background-color: #28a745;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 8px 20px;
+    transform: rotate(-45deg);
+    transform-origin: left;
+}
+
+/* ======= TABLE ======= */
+.table {
+    margin-top: 1%;
+    border: 1px solid #ddd;
+}
+
+.table th,
+.table td {
+    padding: 12px;
+    text-align: center;
+    background-color: white;
+    color: #333;
+}
+
+.table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.titleTable {
+    margin-top: 5%;
+}
+
+/* ======= FORMULARIO ======= */
+.form-section {
+    padding: 50px 0;
+    background-color: #f1f1f1;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container .form-control {
+    margin-bottom: 15px;
+}
+
+.form-container .btn {
+    margin-top: 10px;
+}
+
+/* ======= BUTTON STYLING ======= */
+.btn {
+    background-color: #1C8C5A;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.5s;
+}
+
+/* Button Hover Effect */
+.btn:hover {
+    background-color: green; 
+    box-shadow: 1px 1px 5px 1px darkgray;
+    color: white;
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+
+/* ======= FOOTER ======= */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: start;     
+    flex-wrap: wrap;
+    background-color: #1a1a1a;
+    color: white;
+    width: 100%;
+    padding: 40px 20px;
+    border-top: 1px solid #444;
+    text-align: center;      
+}
+
+.footer h4 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+    color: white;
+}
+
+.datosEmpresa,
+.redesSociales,
+.menu {
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 250px;
+}
+
+.datosEmpresa ul,
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.datosEmpresa ul li,
+.menu ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu ul li a:hover {
+    color: #28A745;
+}
+
+.iconoDatos {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.iconoRedesSociales {
+    width: 30px;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.redesSociales {
+    display: flex;
+    justify-content: center; /* Centra los íconos horizontalmente */
+    align-items: center; /* Centra los íconos verticalmente si hay espacio */
+    flex-direction: row; /* Cambiado de column a row para disposición horizontal */
+    gap: 10px;
+}
+
+.redesSociales a img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.3);
+}
+
+/* ======= BOTÓN DE SUBIR ======= */
+.btn-subir, .btn-bajar {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px 1px darkgray;
+    transition: 0.3s ease-in-out;
+}
+
+/* Efecto hover */
+.btn-subir:hover, .btn-bajar:hover {
+    background-color: #28A745;
+    box-shadow: 1px 1px 8px 2px gray;
+    transform: scale(1.05);
+}
+
+/* ======= MEDIA QUERIES ======= */
+@media (max-width: 768px) {
+
+    /* ======= HEADER ======= */
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0;
+        height: auto;
+    }
+
+    .header-logo {
+        display: flex;
+        align-items: center;
+        color: #333;
+        text-decoration: none;
+        margin-bottom: 5px;
+    }
+
+    .logo {
+        width: 60px;
+        margin-right: 10px;
+    }
+
+    .nav-pills {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .nav-pills .nav-link {
+        padding: 6px 12px;
+        font-weight: normal;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        border-radius: 50px;
+        color: #333;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .nav-pills .nav-link.active {
+        background-color: #333;
+        color: white;
+    }
+
+    .logo {
+        width: 50px;
+        margin-right: 8px;
+    }
+
+    .video-container {
+        height: auto;
+        min-height: 50vh;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .recommended {
+        transform: scale(1);
+        margin-bottom: 15px;
+    }
+
+    .recommended-badge {
+        top: 60px;
+        left: 0;
+        transform: rotate(-45deg);
+        font-size: 0.7rem;
+        padding: 6px 15px;
+    }
+
+    .recommended .card {
+        width: 100%;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    /* ======= FOOTER ======= */
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .datosEmpresa,
+    .redesSociales,
+    .menu {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .redesSociales {
+        justify-content: center;
+    }
+
+    .menu ul li {
+        margin-bottom: 10px;
+    }
+
+    .iconoRedesSociales {
+        width: 40px;
+    }
+}

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/calculator.css" />
+
+    <link rel="icon" href="favicon.png" type="image/png">
+
+    <title>TimeOn, IA Laboral en tu Whatsapp, fichajes, registro de entradas y salidas, turnos de trabajo, imputación de proyectos</title>
+</head>
+
+<body>
+    <div class="principal">
+        <div class="hero-container">
+            <img class="img-hero" src="img/HeroTimeOn.jpg" alt="Imagen de portada TimeOn">
+        </div>
+        <div class="container">
+            <div class="row flexbox">
+                <h2 class="section-title">¿Eres una gestoría, asesoría laboral o ETT?</h2>
+                <h3 class="section-subtitle">Descubre cómo puedes obtener ingresos recurrentes simplemente recomendando Timeon a las empresas de tu cartera.</h3>
+
+                <div class="d-flex justify-content-center">
+                    <a href="#calculator" class="cta-button">Mira lo que te estás perdiendo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="quienSoy" class="py-5">
+        <div class="container">
+            <div class="row flexbox">
+                <div class="col-md-3">
+                    <div class="feature">
+                        <div class="feature-large-icon">
+                            <img class="iconosQL" src="img/iconos/cumpleLey.png" alt="Cumple con la ley laboral">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature">
+                        <div class="feature">
+                            <div class="feature-large-icon">
+                                <img class="iconosQL" src="img/iconos/sinContraseñas.png" alt="Sin instalaciones ni contraseñas">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature">
+                        <div class="feature">
+                            <div class="feature-large-icon">
+                                <img class="iconosQL" src="img/iconos/equiposMoviles.png" alt="Perfecto para equipos móviles">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature">
+                        <div class="feature">
+                            <div class="feature-large-icon">
+                                <img class="iconosQL" src="img/iconos/iaWatson.png" alt="IA de watson que responde dudas">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row flexbox">
+                <h2 class="section-title">¿Qué es Timeon Ambassador Program?</h2>
+                <p class="section-subtitle">Timeon es la solución inteligente de control horario y gestión de personal, diseñada para simplificar la vida laboral de las empresas. Conviértete en <strong>Timeon Ambassador</strong> y obtén ingresos por cada empresa que implante la plataforma gracias a ti.</p>
+                <ul class="d-flex justify-content-evenly">
+                    <li class="cta-button">Sin complicaciones técnicas</li>
+                    <li class="cta-button">Comisiones automáticas y transparentes</li>
+                    <li class="cta-button">Apoyo comercial y material personalizado</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="calculator">
+        <div class="container">
+            <div class="row flexbox">
+                <h2 class="section-title">¿Cuánto puedes ganar?</h2>
+                <div class="d-flex justify-content-center">
+                    <div class="card">
+                        <label for="usuarios">Número de usuarios gestionados:</label>
+                        <input type="number" id="usuarios" min="0" value="0" />
+                        <p>Tarifa mensual por usuario: <span id="tarifa">0.00 €</span></p>
+                        <p>Ingreso mensual estimado: <span id="mensual">0.00 €</span></p>
+                        <p class="highlight">Ingreso anual estimado: <span id="anual">0.00 €</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="precio" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Precios</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Free</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1>0 €<small>/mes</small></h1>
+                            <h7>Por usuario activo</h7>
+                            <ul>
+                                <li>1 usuario</li>
+                                <li>Gestión de turnos y horarios</li>
+                                <li>Imputación horas en proyectos</li>
+                                <li>Sin centro de ayuda</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card recommended">
+                        <div class="recommended-badge">RECOMENDADO</div>
+                        <div class="card-header">
+                            <h4>Essentials</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1>2.90 €<small>/mes</small></h1>
+                            <h7>Por usuario activo</h7>
+                            <ul>
+                                <li>Hasta 50 usuarios</li>
+                                <li>Gestión de turnos y horarios</li>
+                                <li>Imputación horas en proyectos</li>
+                                <li>Acceso a Help Center</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Pro</h5>
+                        </div>
+                        <div class="card-body">
+                            <h1>4.90 €<small>/mes</small></h1>
+                            <h7>Por usuario activo</h7>
+                            <ul>
+                                <li>Gestión de turnos y horarios</li>
+                                <li>Imputación horas en proyectos</li>
+                                <li>Prioritario en Help center</li>
+                                <li>Gestión de vacaciones y ausencias</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--<h2 class="section-title titleTable">Compara planes</h2>
+
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Free</th>
+                            <th>Essentials</th>
+                            <th>Pro</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Acceso Whatsapp</th>
+                            <td>&#10003;</td>
+                            <td>&#10003;</td>
+                            <td>&#10003;</td>
+                        </tr>
+                        <tr>
+                            <th>Acceso AppWeb</th>
+                            <td>&#10003;</td>
+                            <td>&#10003;</td>
+                            <td>&#10003;</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <th>Imputación horas</th>
+                            <td></td>
+                            <td>&#10003;</td>
+                            <td>&#10003;</td>
+                        </tr>
+                        <tr>
+                            <th>Gestión de turnos</th>
+                            <td></td>
+                            <td>&#10003;</td>
+                            <td>&#10003;</td>
+                        </tr>
+                        <tr>
+                            <th>IA Watson</th>
+                            <td></td>
+                            <td>&#10003;</td>
+                            <td>&#10003;</td>
+                        </tr>
+                        <tr>
+                            <th>Help Center prioritario</th>
+                            <td></td>
+                            <td></td>
+                            <td>&#10003;</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>-->
+        </div>
+    </section>
+
+    <section id="pruebaGratis" class="form-section">
+        <div class="container">
+            <div class="form-container">
+                <h3>Gana más con tu red de empresas</h3>
+                <!--action de formulario para recibir el mensaje a través de formsubmit, modificar a futuro-->
+                <form action="https://formsubmit.co/ernestodomenech@ideandogroup.com" method="POST">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Introduce tu nombre" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Introduce tu correo" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <textarea class="form-control" placeholder="Escribe tus comentarios" rows="3"
+                                  required></textarea>
+                    </div>
+                    <div class="form-group mt-3">
+                        <button type="submit" class="btn">Quiero ser TimeOn Ambassador</button>
+                    </div>
+                    <!--estas son las opciones de formsubmit, hay que eliminar estos tres inputs a futuro-->
+                    <input type="hidden" name="_subject" value="New submission!">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://timeon.es">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="datosEmpresa">
+                <ul>
+                    <li><img class="iconoDatos" src="./img/iconos/casa.png" alt="direccion">Carrer Convent de Santa Clara 6 1º - Valencia</li>
+                    <li><img class="iconoDatos" src="./img/iconos/correo.png" alt="correo">sales@timeon.es</li>
+                    <li><img class="iconoDatos" src="./img/iconos/telefono.png" alt="telefono">964 66 00 88</li>
+                    <li>&copy; TimeOn&nbsp;<span id="currentYear"></span></li>
+                </ul>
+            </div>
+            <div class="redesSociales">
+                <a href="https://www.linkedin.com/company/timeones" target="_blank">
+                    <img class="iconoRedesSociales" src="./img/iconos/linkedin.png" alt="linkedin">
+                </a>
+                <a href="https://www.instagram.com/timeon.es" target="_blank">
+                    <img class="iconoRedesSociales" src="./img/iconos/instagram.png" alt="instagram">
+                </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="nav-item">
+                        <a href="#quienSoy" class="nav-link active">TimeOn Ambassador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#precio" class="nav-link">Precios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#pruebaGratis" class="nav-link">Ganar más</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <button id="btnSubir" class="btn-subir">
+        <a href="https://timeon.es" target="_blank" class="nav-link">
+            <img class="iconosQ" src="./img/iconos/inicioSesion.png" alt="Icono de inicio sesion">
+        </a>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Ykv3wAuYhJDUNVmXDDr1rPQ/OB3EPN9vnpA2zOcaP+9gDC5V6KAfJ+p1fD5d80sy"
+            crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/calculator.js"></script>
+
+</body>
+
+</html>
