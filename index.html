@@ -196,10 +196,24 @@
         <input type="hidden" name="_next" value="https://timeon.es">
     </form>-->
                 <form id="ambassador-form">
-                    <input class="form-control" type="text" name="name" placeholder="Tu nombre" required>
-                    <input type="email" class="form-control" name="email" placeholder="Tu correo" required>
-                    <textarea class="form-control" name="message" placeholder="Mensaje" required></textarea>
-                    <button class="btn" type="submit">Enviar</button>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="name" placeholder="Tu nombre" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" placeholder="Tu correo" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <textarea class="form-control" name="message" placeholder="Mensaje" required></textarea>
+                    </div>
+                        <div class="form-group mt-3">
+                            <button class="btn" type="submit">Quiero ser TimeOn Ambassador</button>
+                        </div>
                 </form>
 
                 <div id="form-status"></div>
