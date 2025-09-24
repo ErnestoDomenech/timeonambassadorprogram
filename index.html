@@ -196,10 +196,10 @@
         <input type="hidden" name="_next" value="https://timeon.es">
     </form>-->
                 <form id="ambassador-form">
-                    <input type="text" name="name" placeholder="Tu nombre" required>
-                    <input type="email" name="email" placeholder="Tu correo" required>
-                    <textarea name="message" placeholder="Mensaje" required></textarea>
-                    <button type="submit">Enviar</button>
+                    <input class="form-control" type="text" name="name" placeholder="Tu nombre" required>
+                    <input type="email" class="form-control" name="email" placeholder="Tu correo" required>
+                    <textarea class="form-control" name="message" placeholder="Mensaje" required></textarea>
+                    <button class="btn" type="submit">Enviar</button>
                 </form>
 
                 <div id="form-status"></div>
@@ -215,7 +215,7 @@
                         const data = Object.fromEntries(formData.entries());
 
                         try {
-                            const response = await fetch("/api/submitForm", {
+                            const response = await fetch("api/submitForm", {
                                 method: "POST",
                                 headers: { "Content-Type": "application/json" },
                                 body: JSON.stringify(data)
