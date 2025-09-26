@@ -230,7 +230,7 @@
 
                         try {
                             const response = await fetch("/api/submitForm", {
-                                method: "POST",
+                                method: "GET",
                                 headers: { "Content-Type": "application/json" },
                                 body: JSON.stringify(data)
                             });
