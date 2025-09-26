@@ -1,8 +1,16 @@
-
+// api/submitForm/index.js
 
 const nodemailer = require("nodemailer");
 
 module.exports = async function (context, req) {
+    if (req.method !== 'POST') {
+        context.res = {
+            status: 405,
+            body: "Method Not Allowed"
+        };
+        return;
+    }
+
     const { name, email, message } = req.body;
 
     if (!name || !email || !message) {
@@ -13,16 +21,6 @@ module.exports = async function (context, req) {
         return;
     }
 
-    // Configura aquí el transporte SMTP o SendGrid
-    //const transporter = nodemailer.createTransport({
-    //    host: "smtp.example.com", // Reemplaza con tu SMTP
-    //    port: 465,
-    //    secure: true,
-    //    auth: {
-    //        user: "usuario@example.com",
-    //        pass: "contraseña",
-    //    },
-    //});
     const transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
