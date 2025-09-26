@@ -3,7 +3,7 @@
 const nodemailer = require("nodemailer");
 
 module.exports = async function (context, req) {
-    if (req.method !== 'POST') {
+    if (req.method !== '') {
         context.res = {
             status: 405,
             body: "Method Not Allowed"
