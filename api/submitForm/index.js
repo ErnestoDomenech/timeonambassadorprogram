@@ -6,7 +6,7 @@ module.exports = async function (context, req) {
     if (req.method !== '') {
         context.res = {
             status: 405,
-            body: "Method Not Allowed"
+            body: "Esto no funciona"
         };
         return;
     }
