@@ -218,9 +218,11 @@
                                 form.reset();
                             } else {
                                 statusDiv.textContent = "Error: " + result.error;
+                                form.reset();
                             }
                         } catch (err) {
                             statusDiv.textContent = "Formulario enviado";
+                            form.reset();
                         }
                     });
                 </script>
