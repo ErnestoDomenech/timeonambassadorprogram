@@ -482,6 +482,19 @@ h7 {
     transform: scale(1.05);
 }
 
+.text-timeon {
+    color: #1b9e56; /* Reemplaza con el verde exacto de TimeOn si es otro */
+}
+
+/* Verde TimeOn para el checkbox marcado */
+.form-check-input:checked {
+    background-color: #1b9e56;
+    border-color: #1b9e56;
+}
+.policy {
+    color: #343a40
+}
+
 /* ======= MEDIA QUERIES ======= */
 @media (max-width: 768px) {
 
